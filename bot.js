@@ -9,7 +9,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong1');
+    	message.reply('pong2');
+  	}
+    if (message.content === 'Munkreah') {
+    	message.reply('Happy Birthday Munkreah!');
   	}
     //:V's
     if(message.content == ':V'){
