@@ -13,9 +13,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    ans = message.content;
+    
     if (message.content === 'ping') {
-    	message.reply('pong11');
+    	message.reply('pong12');
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
@@ -47,7 +47,7 @@ client.on('message', message => {
             ans = '';
         }
     }
-    
+    ans = message.content;
     if (go == true && (ans === 'no' || ans === 'No')) {
     	sent = true;
   	}
