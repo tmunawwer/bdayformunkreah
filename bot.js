@@ -13,7 +13,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    
+    ans = message.content;
     if (message.content === 'ping') {
     	message.reply('pong12');
   	}
@@ -40,7 +40,7 @@ client.on('message', message => {
         //}
     }
     
-    ans = message.content;
+    
     if (go == true && (ans === 'no' || ans === 'No')) {
     	sent = true;
   	}
