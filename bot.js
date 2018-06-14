@@ -15,7 +15,7 @@ client.on('ready', () => {
 client.on('message', message => {
     ans = message.content;
     if (message.content === 'ping') {
-    	message.reply('pong9');
+    	message.reply('pong10');
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
@@ -27,12 +27,12 @@ client.on('message', message => {
         ans = '';
   	}
     if (song == true){
-        if (time === 0)
-            message.channel.send('Happy Birthday to Munkreahhhh!');
         time++;
         if (time === 5)
+            message.channel.send('Happy Birthday to Munkreahhhh!');
+        if (time === 10)
             message.channel.send('Happy Birthdayyy to Munkreahhhh!');
-        if (time === 10){
+        if (time === 15){
             message.channel.send('Happy Birthday to you!');
             song = false;
             go = true;
