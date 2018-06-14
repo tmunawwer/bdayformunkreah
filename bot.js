@@ -4,6 +4,7 @@ var days = 1;
 var go = false;
 var song = false;
 var sent = false;
+var ans = '';
 client.on('ready', () => {
     //console.log('I am ready!');
     client.user.setStatus("Online");
@@ -34,16 +35,19 @@ client.on('message', message => {
             message.channel.send('Are you ' + days + '?');
             days++;
             sent == false;
+            ans = '';
         }
     }
-    if (go == true && (message.content === 'no' || message.content === 'No')) {
+    ans = message.content;
+    if (go == true && (ans === 'no' || ans === 'No')) {
     	sent == true;
   	}
-    if ((message.content === 'yes' || message.content === 'Yes') && go == true) {
+    if ((ans === 'yes' || ans === 'Yes') && go == true) {
     	message.channel.send('WHOOOOOOA :clap: :clap:  CONGRATS!');
         message.channel.send('HERES YOUR BDAY CAKE! :bdaycake:');
         go = false;
         sent == false;
+        ans = '';
   	}
     //:V's
     if(message.content == ':V'){
