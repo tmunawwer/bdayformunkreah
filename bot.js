@@ -12,16 +12,17 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    ans = message.content;
     if (message.content === 'ping') {
-    	message.reply('pong6');
+    	message.reply('pong7');
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
   	}
-    //if (message.content === 'Start' || message.content === 'start') {
-    	//message.channel.send('Happy Birthday Munkreah!');
-        //song = true;
-  	//}
+    if (message.content === 'Start' || message.content === 'start') {
+    	message.channel.send('Happy Birthday Munkreah!');
+        song = true;
+  	}
     if (song == true){
         message.channel.send('Happy Birthday to Munkreahhhh!');
         message.channel.send('Happy Birthdayyy to Munkreahhhh!');
@@ -38,7 +39,7 @@ client.on('message', message => {
             ans = '';
         }
     }
-    ans = message.content;
+    
     if (go == true && (ans === 'no' || ans === 'No')) {
     	sent == true;
   	}
