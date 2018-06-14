@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+var days = 1;
+var go = false;
+var song = false;
+var sent = false;
 client.on('ready', () => {
     //console.log('I am ready!');
     client.user.setStatus("Online");
@@ -13,6 +16,33 @@ client.on('message', message => {
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
+  	}
+    if (message.content === 'Start' || message.content === 'start') {
+    	message.channel.send('Happy Birthday Munkreah!');
+        song = true;
+  	}
+    if (song == true){
+        message.channel.send('Happy Birthday to Munkreahhhh!');
+        message.channel.send('Happy Birthdayyy to Munkreahhhh!');
+        message.channel.send('Happy Birthday to you!');
+        go = true;
+        sent == true;
+    }
+    if (go == true){
+        if (sent == true){
+            message.channel.send('Are you ' + days + '?');
+            days++;
+            sent == false;
+        }
+    }
+    if (go == true && (message.content === 'no' || message.content === 'No')) {
+    	sent == true;
+  	}
+    if ((message.content === 'yes' || message.content === 'Yes') && go == true) {
+    	message.channel.send('WHOOOOOOA :clap: :clap:  CONGRATS!');
+        message.channel.send('HERES YOUR BDAY CAKE! :bdaycake:');
+        go = false;
+        sent == false;
   	}
     //:V's
     if(message.content == ':V'){
