@@ -15,7 +15,7 @@ client.on('ready', () => {
 client.on('message', message => {
     ans = message.content;
     if (message.content === 'ping') {
-    	message.reply('pong15');
+    	message.reply('pong16');
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
@@ -54,7 +54,8 @@ client.on('message', message => {
   	}
     if ((ans === 'yes' || ans === 'Yes') && go == true) {
     	message.channel.send('WHOOOOOOA :clap: :clap:  CONGRATS!');
-        message.channel.send('HERES YOUR BDAY CAKE! :bdaycake:');
+        message.channel.send('HERES YOUR BDAY CAKE!');
+        message.channel.send(' :bdaycake: '); 
         go = false;
         sent = false;
         ans = '';
