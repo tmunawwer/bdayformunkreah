@@ -17,10 +17,10 @@ client.on('message', message => {
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
   	}
-    if (message.content === 'Start' || message.content === 'start') {
-    	message.channel.send('Happy Birthday Munkreah!');
-        song = true;
-  	}
+    //if (message.content === 'Start' || message.content === 'start') {
+    	//message.channel.send('Happy Birthday Munkreah!');
+        //song = true;
+  	//}
     if (song == true){
         message.channel.send('Happy Birthday to Munkreahhhh!');
         message.channel.send('Happy Birthdayyy to Munkreahhhh!');
