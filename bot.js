@@ -25,8 +25,9 @@ client.on('message', message => {
         message.channel.send('Happy Birthday to Munkreahhhh!');
         message.channel.send('Happy Birthdayyy to Munkreahhhh!');
         message.channel.send('Happy Birthday to you!');
+        song = false;
         go = true;
-        sent == true;
+        sent = true;
     }
     if (go == true){
         if (sent == true){
