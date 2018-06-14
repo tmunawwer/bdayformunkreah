@@ -55,7 +55,6 @@ client.on('message', message => {
     if ((ans === 'yes' || ans === 'Yes') && go == true) {
     	message.channel.send('WHOOOOOOA :clap: :clap:  CONGRATS!');
         message.channel.send('HERES YOUR BDAY CAKE!');
-        message.channel.send(' :bdaycake: '); 
         go = false;
         sent = false;
         ans = '';
