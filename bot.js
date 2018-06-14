@@ -27,17 +27,17 @@ client.on('message', message => {
         ans = '';
   	}
     if (song == true){
-        time++;
-        if (time === 5)
+        //time++;
+        //if (time === 5)
             message.channel.send('Happy Birthday to Munkreahhhh!');
-        if (time === 10)
+        //if (time === 10)
             message.channel.send('Happy Birthdayyy to Munkreahhhh!');
-        if (time === 15){
+        //if (time === 15){
             message.channel.send('Happy Birthday to you!');
             song = false;
             go = true;
             sent = true;
-        }
+        //}
     }
     if (go == true){
         if (sent == true){
