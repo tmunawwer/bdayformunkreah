@@ -15,7 +15,7 @@ client.on('ready', () => {
 client.on('message', message => {
     ans = message.content;
     if (message.content === 'ping') {
-    	message.reply('pong7');
+    	message.reply('pong8');
   	}
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
