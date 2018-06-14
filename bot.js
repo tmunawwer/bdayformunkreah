@@ -3,16 +3,16 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     //console.log('I am ready!');
-    //client.user.setStatus("Online");
-    //client.user.setActivity("Munkreah's Birthday");
+    client.user.setStatus("Online");
+    client.user.setActivity("Munkreah's Birthday");
 });
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong2');
+    	message.reply('pong3');
   	}
-    if (message.content === 'Munkreah') {
-    	message.reply('Happy Birthday Munkreah!');
+    if (message.content === 'Munkreah' || message.content === 'munkreah') {
+    	message.channel.send('Happy Birthday Munkreah!');
   	}
     //:V's
     if(message.content == ':V'){
