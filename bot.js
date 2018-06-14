@@ -9,7 +9,7 @@ var time = 0;
 client.on('ready', () => {
     //console.log('I am ready!');
     client.user.setStatus("Online");
-    client.user.setActivity("Munkreah's Birthday");
+    client.user.setGame("Munkreah's Birthday", "https://www.twitch.tv/test");
 });
 
 client.on('message', message => {
