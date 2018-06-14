@@ -39,14 +39,7 @@ client.on('message', message => {
             sent = true;
         //}
     }
-    if (go == true){
-        if (sent == true){
-            message.channel.send('Are you ' + days + '?');
-            days++;
-            sent = false;
-            ans = '';
-        }
-    }
+    
     ans = message.content;
     if (go == true && (ans === 'no' || ans === 'No')) {
     	sent = true;
@@ -59,6 +52,14 @@ client.on('message', message => {
         ans = '';
         time = 0;
   	}
+    if (go == true){
+        if (sent == true){
+            message.channel.send('Are you ' + days + '?');
+            days++;
+            sent = false;
+            ans = '';
+        }
+    }
     //:V's
     if(message.content == ':V'){
         message.reply('V:');
