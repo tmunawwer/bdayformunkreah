@@ -20,10 +20,11 @@ client.on('message', message => {
     if (message.content === 'Munkreah' || message.content === 'munkreah') {
     	message.channel.send('Happy Birthday Munkreah!');
   	}
-    if (message.content === 'Start' || message.content === 'start') {
+    if (ans === 'Start' || ans === 'start') {
     	message.channel.send('Happy Birthday Munkreah!');
         song = true;
         time = 0;
+        ans = '';
   	}
     if (song == true){
         if (time === 0)
