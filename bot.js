@@ -5,6 +5,7 @@ var go = false;
 var song = false;
 var sent = false;
 var ans = '';
+var time = 0;
 client.on('ready', () => {
     //console.log('I am ready!');
     client.user.setStatus("Online");
@@ -22,14 +23,19 @@ client.on('message', message => {
     if (message.content === 'Start' || message.content === 'start') {
     	message.channel.send('Happy Birthday Munkreah!');
         song = true;
+        time = 0;
   	}
     if (song == true){
         message.channel.send('Happy Birthday to Munkreahhhh!');
-        message.channel.send('Happy Birthdayyy to Munkreahhhh!');
-        message.channel.send('Happy Birthday to you!');
-        song = false;
-        go = true;
-        sent = true;
+        time++;
+        if (time === 5)
+            message.channel.send('Happy Birthdayyy to Munkreahhhh!');
+        if (time === 10){
+            message.channel.send('Happy Birthday to you!');
+            song = false;
+            go = true;
+            sent = true;
+        }
     }
     if (go == true){
         if (sent == true){
