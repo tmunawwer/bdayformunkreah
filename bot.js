@@ -44,7 +44,7 @@ client.on('message', message => {
   }
 });
   	}
-    if (message.content === 'help') {
+    if (message.content === 'Gifts') {
     	message.channel.send({embed: {
     color: 3447003,
     author: {
