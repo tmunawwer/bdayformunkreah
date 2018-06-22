@@ -73,7 +73,7 @@ client.on('message', message => {
         message.reply('MESSAGE FROM DARKIJ: \n\"Pending\"');
     }
     if (message.content === 'Open Gift Jek') {
-        message.reply('MESSAGE FROM JEK: \n\"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you:DDD\"\nProfile pic:\n https://imgur.com/a/R8b2xo2 \n and here is the birthday picture I have been working on!\nsoon');
+        message.reply('MESSAGE FROM JEK: \n\"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you :DDD\"\nProfile pic:\n https://imgur.com/a/tNCH0uR \n and here is the birthday picture I have been working on!\n https://imgur.com/a/YgXj4RL');
     }
     if (message.content === 'ping') {
     	message.reply('pong1');
@@ -115,7 +115,7 @@ client.on('message', message => {
   	}
     if ((ans === 'yes' || ans === 'Yes') && go == true) {
     	message.channel.send('WHOOOOOOA :clap: :clap:  CONGRATS!');
-        message.channel.send('HERES YOUR BDAY CAKE!');
+        message.channel.send('HERES YOUR BDAY CAKE!\n https://imgur.com/a/05ZPMvr');
         go = false;
         sent = false;
         ans = '';
