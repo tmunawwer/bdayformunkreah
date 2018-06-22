@@ -67,10 +67,13 @@ client.on('message', message => {
 });
   	}
     if (message.content === 'Open Gift Natsuru') {
-        message.reply('MESSAGE FROM NATSURU: \"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"');
+        message.reply('MESSAGE FROM NATSURU: \n\"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"');
+    }
+    if (message.content === 'Open Gift Darkij') {
+        message.reply('MESSAGE FROM DARKIJ: \n\"Pending\"');
     }
     if (message.content === 'Open Gift Jek') {
-        message.reply('MESSAGE FROM JEK: \"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you:DDD\"\nProfile pic:\n https://imgur.com/a/R8b2xo2 \n and here is the birthday picture I have been working on!\nsoon');
+        message.reply('MESSAGE FROM JEK: \n\"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you:DDD\"\nProfile pic:\n https://imgur.com/a/R8b2xo2 \n and here is the birthday picture I have been working on!\nsoon');
     }
     if (message.content === 'ping') {
     	message.reply('pong1');
