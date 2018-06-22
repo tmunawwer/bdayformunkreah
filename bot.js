@@ -69,8 +69,8 @@ client.on('message', message => {
     if (message.content === 'Open Gift Natsuru') {
         message.reply('MESSAGE FROM NATSURU: \"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"');
     }
-    if (message.content === 'Open Gift Natsuru') {
-        message.reply('MESSAGE FROM NATSURU: \"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you:DDD\"\nProfile pic:\nhttps://imgur.com/a/R8b2xo2\nand here is the birthday picture I'\'ve been working on!\n---');
+    if (message.content === 'Open Gift Jek') {
+        message.reply('MESSAGE FROM JEK: \"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you:DDD\"\nProfile pic:\nhttps://imgur.com/a/R8b2xo2\nand here is the birthday picture I'\'ve been working on!\n---');
     }
     if (message.content === 'ping') {
     	message.reply('pong1');
