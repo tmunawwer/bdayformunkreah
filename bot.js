@@ -67,7 +67,7 @@ client.on('message', message => {
 });
   	}
     if (message.content === 'Open Gift Natsuru') {
-        message.reply('MESSAGE FROM NATSURU: \n\"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"\n https://imgur.com/a/WeQH9Ew \nMy gift is all of the memes in #brithday-memes ');
+        message.reply('MESSAGE FROM NATSURU: \n\"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"\n https://imgur.com/a/WeQH9Ew \nMy gift is all of the memes in #birthday-memes ');
     }
     if (message.content === 'Open Gift Darkij') {
         message.reply('MESSAGE FROM DARKIJ: \n\"Pending\"');
