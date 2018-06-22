@@ -44,6 +44,31 @@ client.on('message', message => {
   }
 });
   	}
+    if (message.content === 'help') {
+    	message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "COMMANDS:",
+    description: "Birthday Bot for munkreah",
+    fields: [{
+        name: "Gift Commands",
+        value: "Gifts from\nNatsuru\nDarkij\nJek\n\nTo open the gifts, type \"Open Gift [NAME]\""
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "Birthday Bot"
+    }
+  }
+});
+  	}
+    if (message.content === 'Open Gift Natsuru') {
+        message.reply('MESSAGE FROM NATSURU: \"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"');
+    }
     if (message.content === 'ping') {
     	message.reply('pong1');
   	}
