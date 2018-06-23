@@ -70,7 +70,7 @@ client.on('message', message => {
         message.reply('MESSAGE FROM NATSURU: \n\"HAPPY BDAY MONKEY!!! KEEP OP ING!!!\"\n https://imgur.com/a/WeQH9Ew \nMy gift is all of the memes in #birthday-memes ');
     }
     if (message.content === 'Open Gift Darkij') {
-        message.reply('MESSAGE FROM DARKIJ: \n\"HAPPY BIRTHDAY MUNKREAH! I HOPE YOU HAVE A GOOD ONE!\"\n https://imgur.com/a/4KPTMHx);
+        message.reply('MESSAGE FROM DARKIJ: \n\"HAPPY BIRTHDAY MUNKREAH! I HOPE YOU HAVE A GOOD ONE!\"\n https://imgur.com/a/4KPTMHx');
     }
     if (message.content === 'Open Gift Jek') {
         message.reply('MESSAGE FROM JEK: \n\"HERPER BERTHDER MUNKREAH! Er herp u herf er gerd one! Here are my gifts for you :DDD\"\nProfile pic:\n https://imgur.com/a/tNCH0uR \n and here is the birthday picture I have been working on!\n https://imgur.com/a/YgXj4RL');
